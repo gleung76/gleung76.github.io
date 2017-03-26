@@ -1,0 +1,185 @@
+<! DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="chem.css" type="text/css" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script>
+        window.onload = function() {
+                document.getElementById("elctromgrdtnnav").onclick = function() {
+                    var elctromgrdtnpos = document.getElementById("elctromgrdtn").getBoundingClientRect();
+                    var elctromgrdtny = elctromgrdtnpos.top 
+                    $("html, body").animate({ scrollTop: elctromgrdtny }, "slow");
+                    return false;
+                }
+                document.getElementById("lnespctrmnav").onclick = function() {
+                    var lnespctrmpos = document.getElementById("lnespctrm").getBoundingClientRect();
+                    var lnespctrmy = lnespctrmpos.top 
+                    $("html, body").animate({ scrollTop: lnespctrmy }, "slow");
+                    return false;
+                }
+                document.getElementById("qmmnav").onclick = function() {
+                    var qmmpos = document.getElementById("qmm").getBoundingClientRect();
+                    var qmmy = qmmpos.top 
+                    $("html, body").animate({ scrollTop: qmmy }, "slow");
+                    return false;
+                }
+                document.getElementById("electrnconfgnav").onclick = function() {
+                    var electrnconfgpos = document.getElementById("electrnconfg").getBoundingClientRect();
+                    var electrnconfgy = electrnconfgpos.top 
+                    $("html, body").animate({ scrollTop: electrnconfgy }, "slow");
+                    return false;
+                }
+                document.getElementById("ptandelcconfgnav").onclick = function() {
+                    var ptandelcconfgpos = document.getElementById("ptandelcconfg").getBoundingClientRect();
+                    var ptandelcconfgy = ptandelcconfgpos.top 
+                    $("html, body").animate({ scrollTop: ptandelcconfgy }, "slow");
+                    return false;
+                }
+                document.getElementById("pertrndnav").onclick = function() {
+                    var pertrndpos = document.getElementById("pertrnd").getBoundingClientRect();
+                    var pertrndy = pertrndpos.top 
+                    $("html, body").animate({ scrollTop: pertrndy }, "slow");
+                    return false;
+                }
+                document.getElementById("grppropnav").onclick = function() {
+                    var grpproppos = document.getElementById("grpprop").getBoundingClientRect();
+                    var grppropy = grpproppos.top 
+                    $("html, body").animate({ scrollTop: grppropy }, "slow");
+                    return false;
+                }
+            }
+    </script>
+</head>
+<body>
+    <h1 id="header">AP CHEMISTRY REVIEW</h1>
+    <div id="navbg">
+        <nav id="chnav">
+         <div id="scrollbox">
+            <ul>
+                <li><a href="chemchapter1.html">CHAPTER 1</a></li>
+                <li><a href="chemchapter2.html">CHAPTER 2</a></li>
+                <li><a href="chemchapter3.html">CHAPTER 3</a></li>
+                <li><a href="chemchapter4.html">CHAPTER 4</a></li>
+                <li><a href="chemchapter5.html">CHAPTER 5</a></li>
+                <li><a href="chemchapter6.html">CHAPTER 6</a></li>
+                <li><a href="chemchapter7.html">CHAPTER 7</a></li>
+                <li><a href="chemchapter8.html">CHAPTER 8</a></li>
+                <li><a href="chemchapter9.html">CHAPTER 9</a></li>
+                <li><a href="chemchapter10.html">CHAPTER 10</a></li>
+                <li><a href="chemchapter11.html">CHAPTER 11</a></li>
+                <li><a href="chemchapter12.html">CHAPTER 12</a></li>
+                <li><a href="chemchapter13.html">CHAPTER 13</a></li>
+                <li><a href="chemchapter14.html">CHAPTER 14</a></li>
+                <li><a href="chemchapter15.html">CHAPTER 15</a></li>
+                <li><a href="chemchapter16.html">CHAPTER 16</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+        <nav id="subnav">
+            <li id="elctromgrdtnnav">Electromagnetic Radiation</li>
+            <li id="lnespctrmnav">Emmission Spectrum</li>
+            <li id="qmmnav">Quantum Mechanical Model</li>
+            <li id="electrnconfgnav">Electron Configurations</li>
+            <br>
+            <li id="ptandelcconfgnav">Periodic Table and Electron Configurations</li>
+            <li id="pertrndnav">Periodic Trends</li>
+            <li id="grppropnav">Group Properties</li>
+        </nav>
+    <div id="bg">
+        <div id="contentbg">
+            <h2>Chapter 7</h2>
+            <h3 id="elctromgrdtn">Electromagnetic Radiation</h3>
+            <p>Many forms of energy travel in waves. Microwaves to radios to X-rays send out energy that demonstartes this wave behavior. One way of analyzing these waves is by looking at a couple of properties: wavelength and frequency. Wavelength, often represented by &lambda;, is a measurement of the distance between two consecutive peaks of a wave. Frequency, represented by &nu; (that's greek letter "nu," not a v) is the number of waves that pass a given point in a second. Frquency has units of Hertz or 1/s. The equation relating these two is <br> c = &lambda;&nu;<br> where c is the speed of light, 2.9979 X 10<sup>8</sup> m/s. Using this equation, we can find wavelength given frequency or frequency given wavelength.</p>
+            <p>Another important concept was discovered by Max Planck. Planck found that mass can only gain or lose energy in whole number multiples of 6.626 x 10<sup>-34</sup> J. 6.626 x 10<sup>-34</sup> J, Planck's constant (h) is important in another equation. Einstein proposed that electromagnetic radiation can be viewed as a stream of particles called photons. The energy of a single photon in a wave of energy can be calculated with the equation E<sub>photon</sub> = h&nu; or by combining it with the previous equation can be rearranged to be E<sub>photon</sub> = hc/&lambda;
+            <p>Einstein also derived another equation, E = mc<sup>2</sup> where E is energy, m is mass, and c is the speed of light. This proposed that energy has mass. By combining this equation with the previous one, we get <img class="demo" src="https://docs.google.com/drawings/d/1_cvwMv6d_7KtZ4GEPXT5aN_SiIq0PgUIzizE7bSRPH8/pub?w=171&amp;h=113">. This equation can be used to find the mass of a single photon in a wave. 
+            </p>
+            <h3 id="lnespctrm">Emmission Spectrum</h3>
+            <p>When energy is added to an atom, it can go to what is called an "excited state." This occurs when one or more electrons jump to a higher energy level and are not occupying the lowest possible energy levels. Eventually, these electrons must return to their original state and when they fall back down to this lower energy state, they release that energy in the form of light. This light will be released at different wavelengths depending on the atom and as a result, each element will produce a unique emmission spectrum. 
+            <h3 id="qmm">Quantum Mechanical Model</h3>
+            <p>Niels Bohr created a model of the atom that stated that atoms move in defined circular orbits around the nucleus. He is responsible for the model that looks like this <img class="demo" src="https://docs.google.com/drawings/d/1TbJLJSkdJBeyTK6xZiJ4vMLRJVSxagynm00Z-DhUnSE/pub?w=136&amp;h=134"> Unfortunately, this model didn't work for most atoms and had to be abandoned in favor of the wave mechanical model. The wave mechanical model suggests that electrons can be found in an electron cloud surrounding the nucleus. This means we can never be entirely sure where an electron is, but we can make a pretty good prediction of where it is. Each electron has its own orbital, not like Bohr's orbitals but rather a three dimensional cloud that the electron will spend most of its time in. 
+            <h3 id="electrnconfg">Electron Configurations</h3>
+            <p>In order to distinguish between these orbitals, each orbital is distinguished by a series of quantum numbers. The first number is simply an integral number that refers to the energy level of the orbital. As this number increases, both distance from the nucleus and energy of the electron increase. When we look closer a the enrgy, we have sub shells. These sub levels are distinguished by letters s, p, d and f. Energy level one only has the s sublevel. Energy level two has s and p sublevels. Energy level three has s, p, and d levels. The fourth level has s, p, d, and f. Within these sublevels are orbitals, each able to hold 2 electrons. S sublevels have 1 orbital, p's have 3, d's have 5, f's have 7. Each sublevel can hold twice as many electrons as the number of orbitals it has since each orbital has 2 electrons. (This means s's hold 2 electrons, p's hold 6, d's hold 10, f's hold 14) The final number of a qunatum number defines the number of the electron within the sublevel. Here's a diagram on how these levels and sublevels and orbitals are broken down. <img class="demo, bigpict" src="https://docs.google.com/drawings/d/1kxBhdi1rObbpG9ZbAQny2uoI0kErlbOYc174Mjve3do/pub?w=972&amp;h=300">  You may come across questions that ask you for the electron configuration of a particular element. What this is asking for is which energy levels and sub shells and orbitals are filled. With this information, we can begin to write out electron configurations. Let's start with something easy like Lithium. Lithium has 3 electrons. The first two electrons will be located in the first energy level in the s sub shell. Since there are 2 of them, we can fill the subshell and write 1s<sup>2</sup>. Now that our first energy level is completely full, we can move onto the second one. The remaining electron will go into the s subshell and since there is only one, we write 2s<sup>1</sup>. The electron configuration for Lithium is 
+            1s<sup>2</sup> 2s<sup>1</sup></p>
+            <h4>Orbital Notation</h4>
+            <p>The other way to represent this is an orbital diagram. In an orbital diagram, lines are drawn to represent orbitals and arrows on that line represent electrons. Arrows go in opposite directions to show electrons spinning in opposite directions. The orbital diagram for oxygen looks like this. <img class="demo"src="https://docs.google.com/drawings/d/1JpYeIgMibQeQIof5fOBEDFfjCuaOEuOuruc7qo5vAf8/pub?w=480&amp;h=151">Notice how in the 2p sublevel, all the orbitals must be filled before we can begin doubling up electrons.</p> 
+            
+            <h3 id="ptandelcconfg">Periodic Table and Electron Configurations</h3>
+            <p>It turns out electrons like to fill in orbitals in a particular order. As atoms get bigger and bigger, it'll become difficult writing electron configurations the way we did above. The periodic table can help with that. Let's start by looking at this diagram. I've selectively filled in the elements I will be referring to because it's easier to see.  <img class="demo, bigpict" src="https://docs.google.com/drawings/d/12TmrloEGftsDMBKc3_F6zl_vqNKtStRGghqxYTDgSu8/pub?w=709&amp;h=428"> We have four blocks, s, p, d, and f. As we move across the table from top to bottom and from left to right, the blocks will tell you how the electrons are filling the orbitals. You may have noticed that Helium has been moved from the top right corner to the top left next to hydrogen. Normally it goes on the right because it has properties similar to the noble gases on that side, but it can also go on the left next to hydrogen because its electrons will the s subshell and thus it goes in the s block.</p>
+            <p>Let's start using the periodic table to write electron configurations. Starting with hydrogen in the top left corner, we are in the s block so we add one electron to the 1st s orbital making it 1s<sup>2</sup>. When we shift over to helium we're still in the s block so we add another electron the 1st s orbital to get 1s<sup>2</sup>. Move to the next row. We're now at Li in the second period and the s block. We must add another electron to an s orbital, but since the first energy level and s orbital are filled, we must put it in the second energy level's s orbital. Lithium's electron configuration will 1s<sup>2</sup> 2s<sup>1</sup>.  Berillium's will be 1s<sup>2</sup> 2s<sup>2</sup>. Now we are at boron in the p block and must put the next electron in a p orbital. The first energy level doesn't have a p sublevel so it must go in the p sublevel in the second energy level. Boron's electron configuration will be 1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>1</sup>. Proceed like this just adding electrons in the lowest possible sublevel of that block. When you get to K, you may notice something. Its electron configuration is 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup>. You'll get back to the s block and have to put electrons into 4s, but you haven't put any electrons into the 3d sublevel yet. That's okay. Electrons will occupy 4s before 3d, 5s before 4d and so on. This is why the periodic table is helpful. It'll tell you where and what order to put the electrons in. Once you get to Sr, you can begin putting electrons into the d orbitals. The third energy level is the first one to actually have d orbitals so you'll put them into 3d. The d block may begin in the 4th row but the electrons go in the third energy level! Sr's electron configuration is 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>1</sup>. The other location to watch out for is right after Ba. After Ba, you CANNOT onto Hf. You must go down to the f block and fill out the 4f orbitals for the La and the rest of the row. The electron configuration for La is [Xe]6s<sup>2</sup> 4f<sup>1</sup>. (I just used noble gas configuration. Write the symbol for the last noble gas in brackets and procede writing the electron configuration afterwards). The electron configuration for Hf is [Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup>.</p>
+           
+            <h3 id="pertrnd">Periodic Trends</h3>
+            <h4>Atomic Radius</h4>
+            <p>As you go across a period, atomic radius tends to decrease. This is because elements in the same period have the same number of energy levels, but as you go across, number of protons increases. This means there is a greater positive charge pulling in electrons from the same distance away. The more protons, the greater the positive charge and the more they can pull the electrons in to make the atomic radius smaller. As you go down a group, atomic radius increases because elements further down have more energy levels.</p>
+            <h4>Ionic Radius</h4>
+            <p>Cations tend to be smaller than the atom of an element. This is because in most cases, the cation will have lost its electrons in its outermost energy level. Losing electrons also reduces the repulsion between electrons. Anions tend to be larger than the atom of an element because they have gained electrons. These extra electrons will repel the original electrons and push them out, making the radius bigger.</p>
+            <h4>Isoelectronic Series</h4>
+            <p>In an isoelectronic series, all the ions have the same electron configurations. Na<sup>+</sup>, Mg<sup>+2</sup>, O<sup>-2</sup>, F<sup>-1</sup> are all part of an isoelectronic series because they all have the same electron configuration as Neon. In an isoelectronic series, the ion with the most protons will be the smallest because it is able to pull in the electrons more.</p>
+            <h4>First Ionization Energy</h4>
+            <p>First ionization energy is defined as the amount of energy required to remove the first electron of an atom. First ionization energy decreases as you move down a group because there are more energy levels and the electrons are farther away from the nucleus. Generally, first ionization energy increases as you move across a row. This is because as you move across a row, there are more protons holding onto electrons as well as the fact that the atom would rather gain electrons to have a stable octect than lose them. However, there are two exceptions located between groups 2 and 3 and groups 5 and 6. <img class="demo, bigpict" src="https://docs.google.com/drawings/d/1OYZN9qxFieWCwmVkDig8tgpR8IfyK2gXW7ojBhoNuKQ/pub?w=716&amp;h=181"> Generally, first ionization energy increases as you move across a group, but when you go from group 2 to group 3 and group 5 to group 6, it decreases. Let's look at some orbital notation diagrams to see why. <img class="demo" src="https://docs.google.com/drawings/d/1oy4im-7cvWJoZ8X5-n1qyvztuNu0wbT330bsRpIMAWI/pub?w=564&amp;h=214">That lone electron in the 2p orbital is actually easier to pull off than any electrons from Be. This is because the s orbitals "shield" the p orbital from the nucleus. The pull on that electron isn't as strong. This trend continues between group 2 and 3 even as you go to lower periods. As for group 5 and 6... <img class="demo" src="https://docs.google.com/drawings/d/1WWnSMXos27dTIuF3cGqPFms7pYw4DghKHH0QF7P8Om8/pub?w=547&amp;h=201"> The fourth electron in the 2p orbital is easier to pull off because with only three electrons, each orbital has a single electron and is relatively stable. When you add a fourth one, it actually repels the other electron in its orbital and makes it less stable than it had been previously. As a result, oxygen has a lower first ionization energy than nitrogen. This trend also continues in lower periods.</p>
+            <h3 id="grpprop">Group Properties</h3>
+            <h4>Metals vs Nonmetals</h4>
+            <p>What is a metal and a non metal? Well on the periodic table they are arranged like this <img class="demo, bigpict" src="https://docs.google.com/drawings/d/101wXvbPKz2Np659vd0Pg9i-ndiBnlFjFnuXcM4d7ZQo/pub?w=709&amp;h=302"> 
+            <table>
+                <th>Properties of Metals and Nonmetals</th>
+                <tr>
+                    <td><strong>Metals</strong></td>
+                    <td><strong>Nonmetals</strong></td>
+                </tr>
+                <tr>
+                    <td>Lusterous, "shiny"</td>
+                    <td>No luster, dull</td>
+                </tr>
+                <tr>
+                    <td>Malleable, ductile (can be pulled wires)</td>
+                    <td>Brittle</td>
+                </tr>
+                <tr>
+                    <td>Good conductors of heat and electricity</td>
+                    <td>Poor conductors</td>
+                </tr>
+                <tr>
+                    <td>Tend to form cations</td>
+                    <td>Tend to form anions</td>
+                </tr>
+                <tr>
+                    <td>Tend to form ionic substances</td>
+                    <td>Tend to form molecular compounds</td>
+                </tr>
+            </table>
+            </p>
+            <h4>Alkali Metals</h4>
+            <p>
+                <ul>
+                    <li>Soft, metallic solids</li>
+                    <li>Not found in nature in their elemental form because they are highly reactive</li>
+                    <li>Low densities and melting points</li>
+                    <li>Low ionization energies</li>
+                    <li>Highly exothermic reactions in water</li>
+                    <li>Bond with oxygen to form peroxides</li>
+                </ul>
+            </p>
+            <h4>Alkaline Earth Metals</h4>
+            <p>
+                <ul>
+                    <li>Higher densities and melting points than alkali metals</li>
+                    <li>Low ionization energies, but not as low as alkali metals</li>
+                    <li>Reactivity increases down the group</li>
+                </ul>
+            </p>
+            <h4>Halogens</h4>
+            <p>
+                <ul>
+                    <li>Large, negative electron affinities meaning they attract electrons and tend to be reduced (act as an oxidizing agent)</li>
+                    <li>React with metals to form metal halides</li>
+                </ul>
+            <h4>Noble Gases</h4>
+            <p>
+                <ul>
+                    <li>VERY high ionization energies</li>
+                    <li>Relatively unreactive</li>
+                    <li>Found in nature as monoatomic gases (single atoms float around unbonded)</li>
+            </div>
+        <footer></footer>
+    </div>
