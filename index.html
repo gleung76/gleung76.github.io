@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>borr.com</title>
+        <title>Gillian Leung</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,13 +9,134 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" referrerpolicy="no-referrer"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" referrerpolicy="no-referrer"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Serif+Text">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+        <link rel="icon" type="image/x-icon" href="assets/icon.png"> 
 
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="index.js" defer></script>
     </head>
     <body>
-        Hello, world!
+        <div id="content-container">
+            <nav role="navigation" id="mobile-nav">
+                <div id="menuToggle">
+                  <input id="checkbox" type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  <ul id="menu">
+                    <a href="#about-content" onclick="">ABOUT</a>
+                    <a href="#resume">RESUME</a>
+                    <a href="#projects">PROJECTS</a>
+                    <div id="icons">
+                        <a href="https://github.com/gleung76" target="_blank">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_38)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22222 38H33.7778C36.1096 38 38 36.1096 38 33.7778V4.22222C38 1.89035 36.1096 0 33.7778 0H4.22222C1.89035 0 0 1.89035 0 4.22222V33.7778C0 36.1096 1.89035 38 4.22222 38Z" fill="var(--background)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.7222 32.7222H27.0832V23.1178C27.0832 20.4845 26.0827 19.0129 23.9984 19.0129C21.731 19.0129 20.5464 20.5443 20.5464 23.1178V32.7222H15.112V14.4259H20.5464V16.8904C20.5464 16.8904 22.1804 13.8669 26.063 13.8669C29.9438 13.8669 32.7222 16.2368 32.7222 21.1381V32.7222ZM8.62882 12.0302C6.77775 12.0302 5.27777 10.5184 5.27777 8.65397C5.27777 6.78951 6.77775 5.27777 8.62882 5.27777C10.4799 5.27777 11.979 6.78951 11.979 8.65397C11.979 10.5184 10.4799 12.0302 8.62882 12.0302ZM5.82273 32.7222H11.4894V14.4259H5.82273V32.7222Z" fill="var(--accent-1)"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_38">
+                            <rect width="38" height="38" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>       
+                        </a>    
+                        <a href="https://www.linkedin.com/in/gillian-leung/" target="_blank">         
+                        <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_34)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9404 0C8.91388 0 0 8.9375 0 19.9944C0 28.8328 5.71143 36.3143 13.6347 38.9622C14.6253 39.1613 14.9882 38.532 14.9882 38.0027C14.9882 37.5391 14.9555 35.9503 14.9555 34.2948C9.40857 35.4868 8.25347 31.9113 8.25347 31.9113C7.36204 29.5941 6.04122 28.9985 6.04122 28.9985C4.22571 27.7737 6.17347 27.7737 6.17347 27.7737C8.18735 27.9061 9.24408 29.8261 9.24408 29.8261C11.0265 32.8713 13.8988 32.0109 15.0543 31.4811C15.2192 30.1901 15.7478 29.2963 16.309 28.7999C11.8849 28.3363 7.2302 26.6151 7.2302 18.9349C7.2302 16.7501 8.02204 14.9626 9.27674 13.5724C9.07878 13.076 8.38531 11.0232 9.4751 8.27572C9.4751 8.27572 11.1588 7.74597 14.9551 10.3281C16.5804 9.89043 18.2566 9.66778 19.9404 9.66591C21.6241 9.66591 23.3404 9.89787 24.9253 10.3281C28.722 7.74597 30.4057 8.27572 30.4057 8.27572C31.4955 11.0232 30.8016 13.076 30.6037 13.5724C31.8914 14.9626 32.6506 16.7501 32.6506 18.9349C32.6506 26.6151 27.9959 28.303 23.5388 28.7999C24.2653 29.4287 24.8922 30.6203 24.8922 32.5073C24.8922 35.1886 24.8596 37.3405 24.8596 38.0023C24.8596 38.532 25.2229 39.1613 26.2131 38.9626C34.1363 36.3139 39.8478 28.8328 39.8478 19.9944C39.8804 8.9375 30.9339 0 19.9404 0Z" fill="var(--background )"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_34">
+                            <rect width="40" height="39" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        </a>
+                    </div>
+                  </ul>
+                </div>
+            </nav>
+            <div id="left-content">
+                <div id="header-text">Hello, my name is <span>Gillian Leung</span></div>
+                <div id="nav">
+                    <div class="nav-item active" id="about-content-nav">
+                        <div class="nav-line"></div>
+                        <a href="#about-content">ABOUT</a>
+                    </div>
+                    <div class="nav-item" id="resume-nav">
+                        <div class="nav-line"></div>
+                        <a href="#resume">RESUME</a>
+                    </div>
+                    <div class="nav-item" id="projects-nav">
+                        <div class="nav-line"></div>
+                        <a href="#projects">PROJECTS</a>
+                    </div>
+                    <div id="icons">
+                        <a href="https://github.com/gleung76" target="_blank">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_38)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22222 38H33.7778C36.1096 38 38 36.1096 38 33.7778V4.22222C38 1.89035 36.1096 0 33.7778 0H4.22222C1.89035 0 0 1.89035 0 4.22222V33.7778C0 36.1096 1.89035 38 4.22222 38Z" fill="var(--accent-1)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.7222 32.7222H27.0832V23.1178C27.0832 20.4845 26.0827 19.0129 23.9984 19.0129C21.731 19.0129 20.5464 20.5443 20.5464 23.1178V32.7222H15.112V14.4259H20.5464V16.8904C20.5464 16.8904 22.1804 13.8669 26.063 13.8669C29.9438 13.8669 32.7222 16.2368 32.7222 21.1381V32.7222ZM8.62882 12.0302C6.77775 12.0302 5.27777 10.5184 5.27777 8.65397C5.27777 6.78951 6.77775 5.27777 8.62882 5.27777C10.4799 5.27777 11.979 6.78951 11.979 8.65397C11.979 10.5184 10.4799 12.0302 8.62882 12.0302ZM5.82273 32.7222H11.4894V14.4259H5.82273V32.7222Z" fill="var(--background)"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_38">
+                            <rect width="38" height="38" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>       
+                        </a>    
+                        <a href="https://www.linkedin.com/in/gillian-leung/" target="_blank">         
+                        <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_34)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9404 0C8.91388 0 0 8.9375 0 19.9944C0 28.8328 5.71143 36.3143 13.6347 38.9622C14.6253 39.1613 14.9882 38.532 14.9882 38.0027C14.9882 37.5391 14.9555 35.9503 14.9555 34.2948C9.40857 35.4868 8.25347 31.9113 8.25347 31.9113C7.36204 29.5941 6.04122 28.9985 6.04122 28.9985C4.22571 27.7737 6.17347 27.7737 6.17347 27.7737C8.18735 27.9061 9.24408 29.8261 9.24408 29.8261C11.0265 32.8713 13.8988 32.0109 15.0543 31.4811C15.2192 30.1901 15.7478 29.2963 16.309 28.7999C11.8849 28.3363 7.2302 26.6151 7.2302 18.9349C7.2302 16.7501 8.02204 14.9626 9.27674 13.5724C9.07878 13.076 8.38531 11.0232 9.4751 8.27572C9.4751 8.27572 11.1588 7.74597 14.9551 10.3281C16.5804 9.89043 18.2566 9.66778 19.9404 9.66591C21.6241 9.66591 23.3404 9.89787 24.9253 10.3281C28.722 7.74597 30.4057 8.27572 30.4057 8.27572C31.4955 11.0232 30.8016 13.076 30.6037 13.5724C31.8914 14.9626 32.6506 16.7501 32.6506 18.9349C32.6506 26.6151 27.9959 28.303 23.5388 28.7999C24.2653 29.4287 24.8922 30.6203 24.8922 32.5073C24.8922 35.1886 24.8596 37.3405 24.8596 38.0023C24.8596 38.532 25.2229 39.1613 26.2131 38.9626C34.1363 36.3139 39.8478 28.8328 39.8478 19.9944C39.8804 8.9375 30.9339 0 19.9404 0Z" fill="var(--accent-1)"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_34">
+                            <rect width="40" height="39" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="right-content">
+                <section id="about-content">
+                    <p>I'm a software engineer with a passion for making things that are both <mark>visually</mark> and <mark>functionally</mark> beautiful.</p>
+                    <p>I love to bring my creative side into my work. I believe technology can not only solve problems, but also enhance our lives in a way that's delightful and engaging.</p>
+                    <p>Currently, I’m building a collection of financial data visualizations at <a href="https://go.atom.finance/">Atom Finance.</a></p>
+                    <p>Based in New York.</p>
+                    <img id="photo" src="assets/photo.svg"/>
+                </section>
+                <section id="resume">
+                    <div id="circle"></div>
+                    <a href="assets/resume.pdf" target="_blank">
+                        <img id="resume-photo" src="assets/resume.svg"/>
+                        <div id="resume-button">VIEW RESUME</div>
+                    </a>
+                </section>
+                <section id="projects">
+                    <div class="section-header">
+                        <div class="section-header-title">Projects</div>
+                        <div class="section-divider-line"></div>
+                    </div>
+                    <div class="proj">
+                        <img class="proj-img" src="assets/price-history.gif"/>
+                        <div class="proj-title-container">
+                            <div class="proj-title-rect"></div>
+                            <div class="proj-title">Atom Finance Web Components</div>
+                        </div>
+                        <div class="proj-desc">A suite of web components that fetch and visualize data, all while remaining flexible and customizable to fit in with any site.</div>
+                        <div class="technologies-container">
+                            <div class="technology">stencil.js</div>
+                            <div class="technology">d3</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
     </body>
-</html>
+    
