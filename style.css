@@ -4,7 +4,6 @@
     --text: #2b2d44;
     --accent-1: #3847D2;
     --accent-2: #FF9283;
-    font-size: 16px;
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -48,7 +47,7 @@ a {
 #content-container {
     display: flex;
     height: 100%;
-    padding: 4rem;
+    padding: 8%;
     @media (max-width: 720px) {
         height: auto;
         flex-direction: column;
@@ -148,7 +147,7 @@ a {
 section {
     scroll-snap-align: start;
     scroll-margin: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 16%;
 
     @media (max-width: 720px) {
         width: 100%;
@@ -189,7 +188,7 @@ section {
     font-size: 1rem;
     scroll-margin-top: 4rem;
     box-sizing: border-box;
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 16%);
 
     @media (max-width: 720px) {
         scroll-margin: 6rem;
@@ -205,12 +204,13 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100px;
+    width: 20%;
 
     @media (max-width: 720px) {
         position: relative;
         margin: auto;
         margin-top: 4rem;
+        width: 40%;
     }
 }
 
@@ -226,7 +226,7 @@ section {
 
 
 #resume {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 16%);
     box-sizing: border-box;
 
     @media (max-width: 720px) {
@@ -254,7 +254,6 @@ section {
 #resume-photo {
     position: absolute;
     width: 60%;
-    max-width: 25rem;
     transform: rotate(-18deg);
     box-shadow: -4px -4px 8px 1px rgba(0, 0, 0, .2);
     transition: 0.5s;
@@ -300,8 +299,14 @@ section {
 
 #projects {
     min-height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20%;
+
     @media (max-width: 720px) {
         min-height: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -311,10 +316,9 @@ section {
     justify-content: center;
     gap: 2rem;
     width: 100%;
-    padding-bottom: 20%;
     scroll-snap-align: start;
-    scroll-margin: 2rem;
-    margin-bottom: 2rem;
+    scroll-margin: 4rem;
+    margin-bottom: 4rem;
 
     @media (max-width: 720px) {
         padding: 0;
