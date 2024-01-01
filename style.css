@@ -82,42 +82,45 @@ a {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+}
 
-    .nav-line {
-        height: 2px;
-        background-color: var(--accent-2);
-        width: 0;
-        transition: 0.5s;
-    }
+.nav-item.active a {
+    color: var(--accent-2);
+}
 
-    &.active {
-        a {
-            color: var(--accent-2);
-        }
+.nav-item.active .nav-line {
+    width: 2rem;
+    margin-right: 1rem;
+}
 
-        .nav-line {
-            width: 2rem;
-            margin-right: 1rem;
-        }
-    }
+.nav-item:not(.active) a:hover {
+    padding-left: 1rem;
+    cursor: pointer;
+}
 
-    &:not(.active) {
-        a:hover {
-            padding-left: 1rem;
-            cursor: pointer;
-        }
-    }
 
-    a {
-        display: block;
-        font-weight: 600;
-        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        width: fit-content;
-        color: #2b2d44;
+.nav-item .nav-line {
+    height: 2px;
+    background-color: var(--accent-2);
+    width: 0;
+    transition: 0.5s;
+}
 
-    
+.nav-item a {
+    display: block;
+    font-weight: 600;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: fit-content;
+    color: #2b2d44;
+}
 
-    }
+&.active a {
+    color: var(--accent-2);
+}
+
+&.active .nav-line {
+    width: 2rem;
+    margin-right: 1rem;
 }
 
 #mobile-nav {
@@ -261,13 +264,14 @@ a {
 #header-text {
     font-family: 'DM Serif Text';
     font-size: 64px;
-    span {
-        color: var(--accent-1);
-    }
 
     @media (max-width: 1200px) {
         font-size: 48px;
     }
+}
+
+#header-text span {
+    color: var(--accent-1);
 }
 
 #right-content {
@@ -325,22 +329,22 @@ section {
     font-size: 16px;
     scroll-margin-top: 20rem;
     box-sizing: border-box;
+}
 
-    span {
-        background-color: var(--accent-2)
-    }
+#about-content span {
+    background-color: var(--accent-2)
+}
 
-    #photo {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100px;
+#about-content #photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
 
-        @media (max-width: 720px) {
-            position: relative;
-            margin: auto;
-            margin-top: 4rem;
-        }
+    @media (max-width: 720px) {
+        position: relative;
+        margin: auto;
+        margin-top: 4rem;
     }
 }
 
