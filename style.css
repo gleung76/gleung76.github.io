@@ -4,14 +4,13 @@
     --text: #2b2d44;
     --accent-1: #3847D2;
     --accent-2: #FF9283;
-    font-size: 20px;
+    font-size: 16px;
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
 
     @media (max-width: 720px) {
-        font-size: 16px;
         scroll-snap-type: none;
     }
 
@@ -123,151 +122,12 @@ a {
     margin-right: 1rem;
 }
 
-#mobile-nav {
-    display: none;
-
-    position: sticky;
-    z-index: 200;
-    top: 4rem;
-
-    @media (max-width: 720px) {
-        display: block;
-    }
-}
-
-#menuToggle
-{
-  display: block;
-  position: sticky;
-  z-index: 1;
-  top: 4rem;
-  left: 4rem;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: var(--background);
-  display: block;
-  transition: color 0.3s ease;
-  padding-left: 5px;
-  margin-bottom: 1rem;
-  font-size: 20px;
-}
-
-#menuToggle a:hover
-{
-  color: var(--accent-2);
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0;
-  z-index: 2; 
-  
-  -webkit-touch-callout: none;
-}
-
-
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: var(--accent-1);
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: var(--background);
-}
-
-
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-#menu
-{
-  position: absolute;
-  width: 80%;
-  height: 100vh;
-  margin: -100px 0 0 -4rem;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: var(--accent-1);
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
 #header-text {
     font-family: 'DM Serif Text';
     font-size: 64px;
-    scroll-margin: 4rem;
 
     @media (max-width: 1200px) {
-        font-size: 48px;
+        font-size: 3rem;
     }
 }
 
@@ -278,7 +138,6 @@ a {
 #right-content {
     width: 50%;
     margin-left: 50%;
-    height: 100%;
 
     @media (max-width: 720px) {
         width: 100%;
@@ -288,9 +147,8 @@ a {
 
 section {
     scroll-snap-align: start;
-    margin-bottom: 40%;
-    scroll-margin: 4rem;
-
+    margin-bottom: 8rem;
+    scroll-margin: 6rem;
 
     @media (max-width: 720px) {
         width: 100%;
@@ -306,6 +164,7 @@ section {
     gap: 2rem;
     align-items: center;
     margin-bottom: 2rem;
+    font-family: 'DM Serif Text';
 
     @media (max-width: 720px) {
         display: flex;
@@ -319,8 +178,7 @@ section {
 }
 
 .section-header-title {
-    font-weight: 600;
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 #about {
@@ -328,13 +186,14 @@ section {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: calc(100% - 8rem);
-    font-size: 16px;
-    scroll-margin-top: 20rem;
+    font-size: 1rem;
+    scroll-margin-top: 4rem;
     box-sizing: border-box;
+    height: calc(100vh - 8rem);
 
     @media (max-width: 720px) {
-        scroll-margin: 4rem;
+        scroll-margin: 6rem;
+        height: auto;
     }
 }
 
@@ -367,22 +226,28 @@ section {
 
 
 #resume {
-    position: relative;
-    height: calc(40em + 30%);
-    overflow: visible;
-    margin-bottom: 20%;
+    margin-top: 8rem;
+    height: calc(100vh - 4rem);
+    box-sizing: border-box;
+
+
+    @media (max-width: 720px) {
+        height: auto;
+        margin-top: 0;
+    }
 }
 
 #circle {
-    width: 40rem;
-    height: 40rem;
+    width: 100%;
+    padding-bottom: 100%;
+    float: right;
     content: "";
-    position: absolute;
-    left: 30%;
+    position: relative;
     background-color: var(--accent-2);
     border-radius: 100%;
-    top: 10%; 
     display: block;
+    overflow: hidden;
+    box-sizing: border-box;
     
     @media (max-width: 720px) {
         display: none;
@@ -391,20 +256,20 @@ section {
 
 #resume-photo {
     position: absolute;
-    width: 100%;
+    width: 60%;
     max-width: 25rem;
     transform: rotate(-18deg);
-    top: 30%;
-    left: 60%;
     box-shadow: -4px -4px 8px 1px rgba(0, 0, 0, .2);
     transition: 0.5s;
     display: block;
+    top: 30%;
+    left: 30%;
 
     &:hover {
-        left: 50%;
-        top: 20%;
         transform: rotate(-25deg);
         cursor: pointer;
+        top: 20%;
+        left: 20%;
     }
 
     @media (max-width: 720px) {
@@ -460,26 +325,15 @@ section {
 .proj-img {
     border-radius: 12px;
     box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, .2);
-}
-
-.proj-title-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-.proj-title-rect {
-    background-color: var(--accent-2);
-    height: 3rem;
-    width: 6px;
-    content: '';
+    margin: 1rem 0;
 }
 
 .proj-title {
     font-size: 32px;
     color: var(--accent-1);
     font-weight: 600;
+    border-left: 5px solid var(--accent-2);
+    padding-left: 2rem;
 }
 
 .technologies-container {
@@ -488,7 +342,7 @@ section {
 }
 
 .proj-desc {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 .technology {
