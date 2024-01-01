@@ -326,7 +326,7 @@ section {
     scroll-margin-top: 20rem;
     box-sizing: border-box;
 
-    mark {
+    span {
         background-color: var(--accent-2)
     }
 
