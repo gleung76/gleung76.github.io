@@ -264,6 +264,7 @@ a {
 #header-text {
     font-family: 'DM Serif Text';
     font-size: 64px;
+    scroll-margin: 4rem;
 
     @media (max-width: 1200px) {
         font-size: 48px;
@@ -288,6 +289,8 @@ a {
 section {
     scroll-snap-align: start;
     margin-bottom: 40%;
+    scroll-margin: 4rem;
+
 
     @media (max-width: 720px) {
         width: 100%;
@@ -320,7 +323,7 @@ section {
     font-size: 36px;
 }
 
-#about-content {
+#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,13 +332,17 @@ section {
     font-size: 16px;
     scroll-margin-top: 20rem;
     box-sizing: border-box;
+
+    @media (max-width: 720px) {
+        scroll-margin: 4rem;
+    }
 }
 
-#about-content span {
+#about span {
     background-color: var(--accent-2)
 }
 
-#about-content #photo {
+#about #photo {
     position: absolute;
     bottom: 0;
     right: 0;
